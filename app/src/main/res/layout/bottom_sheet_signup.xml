@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet_signup"
+    android:orientation="vertical"
+    android:background="@drawable/background_bottom_sheet"
+    android:padding="10dp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    app:layout_insetEdge="bottom"
+    android:scrollbarStyle="insideInset"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="40dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:text="Sign Up"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue"
+        android:textColorHint="@android:color/white"
+        android:hint="UserName"
+        android:inputType="text"
+        android:padding="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/blue"
+        android:textColorHint="@android:color/white"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/blue"
+        android:textColorHint="@android:color/white"
+        android:hint="Alamat"
+        android:inputType="textPassword"
+        android:padding="10dp" />
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="+62"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/blue"
+            android:textColorHint="@android:color/white"
+            android:hint="Nomor"
+            android:inputType="number"
+            android:padding="10dp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rv_signup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Sign In"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_btn">
+        <TextView
+            android:text="Sign Up"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</LinearLayout>

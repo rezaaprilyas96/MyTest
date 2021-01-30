@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ItemCustomView">
+        <attr name="sampul" format="reference"/>
+        <attr name="tittle" format="string"/>
+        <attr name="description" format="string"/>
+        <attr name="rate" format="integer"/>
+        <attr name="verified" format="boolean"/>
+    </declare-styleable>
+</resources>
